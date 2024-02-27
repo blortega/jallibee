@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>EDGAR JABEE</title>
+    <link rel="stylesheet" href="jabeeStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="./script.js" rel="stylesheet">
+</head>
+<body>
+    <!--Main page to design the Jollibee Site-->
+    <section class="header">
+        <nav>
+            <a href="meme.html"><img src="./imgJabee/profileforGames-removebg-preview.png"></a>
+            <div class="navigation-links">
+                <ul>
+                    <!--Links to other pages-->
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="jabeeMenu.html">Menu</a></li>
+                    <li><a href="jabeePromo.html">Promos</a></li>
+                    <li><a href="jabeeAbout.html">About</a></li>
+                    <li><a href="jabeeBlog.html">Blog</a></li>
+                    <li><a href="jabeeContact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!--Displays a little introduction to the website-->
+        <div class="text-box">
+            <h1>Jollibee Delivery</h1>
+            <p>Mahal na mahal mo siya. Kaya tanggap ko na. I'll always be 'just your friend'.</p>
+            <!--Used to go to the order page-->
+            <a href="jabeeMenu.html" class="order-design">Order now</a>
+        </div>
+        
+        <div class="featured-food">
+            <h1>Featured</h1>
+            <nav class="ani-box">
+                <a href="jabeeMenu.html"><img src="./imgJabee/french-fries-crispy-fried-chicken-fizzy-drinks-chicken-nugget-pepsi-tin-food-recipe-chicken-meat.png"></a>
+                <a href="jabeeMenu.html"><img src="./imgJabee/dessert-stuff.png"></a>
+                <a href="jabeeMenu.html"><img src="./imgJabee/just-eat-it-joy.png"></a>
+            </nav>
+        </div>
+
+    </section>
+    
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <!--Initialize EmailJS with your user ID-->
+    <script>
+    emailjs.init("3tdPCfaKN0LSh7lgi");
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>

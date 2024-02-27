@@ -1,0 +1,308 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*Used for transition animation*/
+body{
+    animation: transitionInto 0.75s;
+}
+@keyframes transitionInto {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/*This is where the background and the site starts taking shape*/
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),url(./imgJabee/JB_US_ZOOM_BG_3_FA_2020.webp);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+/*This is where the logo and the buttons*/
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150px;
+}
+
+/*Hover animations and proper styling for the Home, Menu, About, Blog and Contact buttons*/
+.navigation-links{
+    flex: 1;
+    text-align: right;
+}
+.navigation-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.navigation-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+.navigation-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: red;
+    display: block;
+    margin: auto; 
+    transition: 0.5s;   
+}
+.navigation-links ul li:hover::after{
+    width: 100%;
+}
+
+/*This is the introductory quotes to the website are*/
+.text-box{
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+    color: #E0163D;
+}
+
+/*Designing the order button to have animations, good font and stuff*/
+.order-design{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 12px 34px;
+    font-size: 10px;
+    background: transparent;
+    position: relative;
+    border-radius: 20px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.order-design:hover{
+    border: 1px solid red;
+    background: red;
+    transition: 0.5s;
+}
+
+/*Designs the featured word for the site*/
+.featured-food h1{
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    margin-top: 80px;
+}
+/*Designs the food by putting them inside borders*/
+.featured-food nav img{
+    width: 300px;
+    height: 250px;
+    margin-top: 1px;
+    background-color: whitesmoke;
+    border-bottom: 50px solid red;
+    border-radius: 20px;
+}
+
+/*Designs the menu foods to make it look cleaner, for Menu HTML*/
+.featured-food-menu nav img{
+    width: 300px;
+    height: 250px;
+    margin-top: 3px;
+    background-color: #fdf8ab;
+
+    transition: 2s;
+}
+.featured-food-menu-text{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    display: inline-block;
+    border: 10px solid red;
+    background-color: red;
+    width: 280px;
+}
+.featured-food-menu p{
+    font-size: 15px;
+}
+
+/*Hover animation for order images*/
+.ani-box a img{
+    display: block;
+}
+.ani-box a:hover{
+    transform: scale(1.3);
+    z-index: 2;
+}
+
+/*Designs for About HTML*/
+.text-box-about {
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 15px;
+}
+.text-box-about h1{
+    font-size: 62px;
+    text-align: center;
+    color: #E0163D;
+}
+
+/*Designs for Blog HTML*/
+.blog-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.blog-heading span{
+    color: #f33c3c;
+
+}
+.blog-heading h3{
+    font-size: 2.4rem;
+    color: #2b2b2b;
+    font-weight: 600;
+}
+.blog-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+    flex-wrap: wrap;
+}
+.blog-box{
+    width: 350px;
+    background-color: white;
+    border: 1px solid white;
+    margin: 20px;
+}
+.blog-img{
+    width: 100%;
+    height: auto;
+}
+.blog-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.blog-text{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.blog-text span{
+    color: #f33c3c;
+    font-size: 0.9rem;
+}
+
+.blog-text .blog-title{
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: black;
+}
+.blog-text a{
+    color: #0f0f0f;
+}
+/*Animations for blog*/
+.blog-text .blog-title:hover{
+    color: #f33c3c;
+    transition: all ease 0.3s;
+}
+.blog-text p{
+    color: #9b9b9b;
+    font-size: 0.9rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 20px 0px;
+}
+
+/*Stuff for Contact HTML*/
+.contact-form{
+    width: 500px;
+    background-color: #E0163D;
+    top: 450px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 10px;
+}
+form{
+    margin: 35px;
+}
+.contact-field{
+    width: 400px;
+    height: 40px;
+    margin-top: 20px;
+    padding-left: 10px;
+    border: 1px solid #777;
+    border-radius: 10px;
+    outline: none;
+}
+.message-field{
+    height: 150px;
+    padding-top: 10px;
+}
+.contact-form h1{
+    color: white;
+    text-align: center;
+    margin-top: 0px;
+    font-size: 62px;
+}
+.contact-form img{
+    display: block;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*MEMES HTML*/
+.memer nav img{
+    width: 300px;
+    height: 250px;
+    margin-top: 1px;
+    background-color: whitesmoke;
+    border-radius: 20px;
+}
+
+/*PROMOS HTML*/
+.featured-promos nav img{
+    width: 300px;
+    height: 250px;
+    margin-top: 3px;
+    background-color: #fdf8ab;
+
+    transition: 2s;
+}
+.featured-promos-text{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    display: inline-block;
+    border: 10px solid red;
+    background-color: red;
+    width: 280px;
+}
+.featured-promos p{
+    font-size: 15px;
+}
+
